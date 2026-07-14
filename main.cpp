@@ -9,18 +9,18 @@ int main()
 {
     Capteur monCapteur;
 
-    moncapteur.setTemperature(37);
-    cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
+    monCapteur.setTemperature(37);
+    cout<<"temperature actuelle : " <<monCapteur.getTemperature()  <<endl;
     
 
 
-moncapteur.setTemperature(100);
-cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
+monCapteur.setTemperature(100);
+cout<<"temperature actuelle : " <<monCapteur.getTemperature()  <<endl;
 
 
 
-moncapteur.setTemperature(-50);
-cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
+monCapteur.setTemperature(-50);
+cout<<"temperature actuelle : " <<monCapteur.getTemperature()  <<endl;
 
 return 0;
 
