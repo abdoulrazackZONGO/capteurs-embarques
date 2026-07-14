@@ -7,20 +7,20 @@ using namespace std;
 
 int main()
 {
-    Capteur moncapteur;
+    Capteur monCapteur;
 
     moncapteur.setTemperature(37);
-    cout<<"temperature actuelle :\n" <<moncapteur.getTemperature()  <<endl;
+    cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
     
 
 
 moncapteur.setTemperature(100);
-cout<<"temperature actuelle :\n" <<moncapteur.getTemperature()  <<endl;
+cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
 
 
 
 moncapteur.setTemperature(-50);
-cout<<"temperature actuelle :\n" <<moncapteur.getTemperature()  <<endl;
+cout<<"temperature actuelle :" <<monCapteur.getTemperature()  <<endl;
 
 return 0;
 
