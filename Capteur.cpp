@@ -5,6 +5,10 @@
 using namespace std;
 
 
+
+Capteur :: Capteur (string u): temperature(0), unite (u) {}
+
+
 void Capteur:: setTemperature(double t){
     if (t >= -40 && t <=85)
         {
@@ -21,4 +25,8 @@ double Capteur:: getTemperature() const
 
 }
 
+void Capteur:: afficherInfo() const{
+cout<<"Temperature actuelle : "<<temperature<<" "<<unite<<endl;
+    
+}
 
