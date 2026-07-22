@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include "Capteur.h"
 
 using namespace std;
@@ -7,18 +8,23 @@ using namespace std;
 
 int main()
 {
-    Capteur monCapteur;
 
-monCapteur.setTemperature(37);
-monCapteur.afficherInfo();
-    
+vector<Capteur> capteurs;
+capteurs.push_back(Capteur("celsius"));
+capteurs.push_back(Capteur("celsius"));
+capteurs.push_back(Capteur("fahrenheit"));
 
-monCapteur.setTemperature(100);
-monCapteur.afficherInfo();
+capteurs[0].setTemperature(-50);
+capteurs[1].setTemperature(37);
+capteurs[2].setTemperature(100);
+capteurs[2].setTemperature(25);
+capteurs[0].setTemperature(-2);
 
 
-monCapteur.setTemperature(-50);
-monCapteur.afficherInfo();
+for (auto& c : capteurs) {         
+    c.afficherInfo();
+}
+
 
 return 0;
 
